@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww5140\viewh17700\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 1. Installing the \'93kagglehub\'94 library \
+\
+2. Importing the kagglehub library\
+\
+3. Downloading the dataset \
+\
+4. Importing necessary Libraries (os, pandas, numpy, matplotlib.pyplot, seaborn)\
+\
+5. Getting the path where the data has been downloaded \
+\
+Getting the data via using the path\
+\
+6. Loading the \'93songs\'94 dataset by using the pandas\
+\
+7. Getting the shape\
+\
+8. Getting basic information about the columns in songs dataset by using \'93info()\'94 function\
+\
+9. Dropping the \'93spotify_preview_url\'94 columns as it is of no use\
+\
+10. Checking for the missing values by using the \'93isna()\'94 and \'93sum()\'94 function\
+\
+11. For plotting the missing value visualisation importing the \'93missingno\'94 library as \'93msno\'94\
+\
+12. Plotting the missing value visualisation by using the library : msno.matrix(df_songs)\
+\
+13. Finding the percentage of missing values in the columns having the missing values.\
+\
+14. Checking for duplicates in \'93name\'94 column by first converting the data into lower case as the data can get repeated\
+\
+15. Getting visuals of the duplicated rows\
+\
+16. It was noticed that even the names of songs were the same their artist name was different that means they has to treated as different songs.\
+\
+So we now checked upon the duplicates based on the \'93spotify_id\'94 column and found 9 duplicated values.\
+\
+17. To make sure we checked for duplicates again based on : \'93spotify_id\'94 , \'93year\'94 and \'93duration_ms\'94 column and got the same result. \
+\
+18. Visual look at the duplicated data\
+\
+19. Dropping the duplicated rows from the dataset\
+\
+20. Confirmation about the drop\
+\
+
+\f1\b Column Wise Analysis\
+
+\f0\b0 \
+Categorical Columns\
+\
+21. getting the names of the columns\
+\
+22. Checking the datatype of each columns\
+\
+23. getting the names of the categorical column data\
+\
+24. making a function to the number of unique categories in each categorical data\
+\
+25. plotting the count plot for \'91genre\'92 column\
+\
+26.  Grouping the songs data based on the \'93genre\'94 column\
+\
+Visuals of each genre and tags column each with 3 values.\
+\
+27. Some songs name are not in proper english, visuals of the songs name that are not in proper english.\
+\
+28. Some songs artists name are not in proper english, visuals of those artists and those rows. \
+\
+29. Moving towards the \'93tags\'94 column\
+\
+30. making an empty list to list all the \'93tags\'94 \
+\
+31. Getting the number of different tags by checking on the length of the \'93tags\'94 list\
+\
+32. Visualising the unique tags from \'93all_tags\'94 list by using the \'93set()\'94 function.\
+\
+
+\f1\b Integer Based Columns\
+
+\f0\b0 \
+34. Getting the names of the integer columns from the datatype\
+\
+35. visualizing the integer columns\
+\
+36. getting the statistical summary of those integer columns and visualizing it. \
+\
+It will include the \'93count\'94 ,\'92unique\'92, \'91top\'92 value and \'91freq\'92. Do this by using \'93Pivot Table\'94\
+\
+37. visualizing the min and max value of each integer column.\
+\
+Use the describe function to the integer columns and match the results.\
+\
+38. Plotting the histogram to visualise the \'93number of songs per year\'94 \
+\
+39. Getting insights of : year with most songs.\
+\
+40. Visualising the histogram and box-plot for the numerical columns.\
+}
