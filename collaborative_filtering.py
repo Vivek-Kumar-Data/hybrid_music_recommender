@@ -17,9 +17,7 @@ user_listening_history_data_path = "data/User Listening History.csv"
 
 
 def filter_songs_data(songs_data: pd.DataFrame, track_ids: list, save_df_path: str) -> pd.DataFrame:
-    """
-    Filter the songs data for the given track ids from the user_history data
-    """
+    
     # filtering all the songs data having the track_ids
     filtered_data = songs_data[songs_data["track_id"].isin(track_ids)]
     # sorting the songs data by track id
@@ -33,16 +31,12 @@ def filter_songs_data(songs_data: pd.DataFrame, track_ids: list, save_df_path: s
 
 
 def save_pandas_data_to_csv(data: pd.DataFrame, file_path: str) -> None:
-    """
-    Save the data to a csv file
-    """
+    
     data.to_csv(file_path, index=False)
     
     
 def save_sparse_matrix(matrix: csr_matrix, file_path: str) -> None:
-    """
-    Save the sparse matrix to a npz file
-    """
+    
     save_npz(file_path, matrix)
 
 
